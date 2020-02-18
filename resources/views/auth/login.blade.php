@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.Plantilla_Principal')
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
@@ -12,7 +12,7 @@
                     @endif
                     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <h1>{{ env('APP_NAME', 'Permissions Manager') }}</h1>
+                        <h1>Cadmio</h1>
                         <p class="text-muted">Login</p>
 
                         <div class="input-group mb-3">

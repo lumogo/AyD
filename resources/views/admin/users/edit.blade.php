@@ -60,6 +60,7 @@
                         {{ $errors->first('roles') }}
                     </em>
                 @endif
+          
                 <p class="helper-block">
                     {{ trans('cruds.user.fields.roles_helper') }}
                 </p>

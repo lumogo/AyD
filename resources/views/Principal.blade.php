@@ -1,5 +1,7 @@
 @extends('layouts.Plantilla_Principal')
  
 @section('content') 
- 		contenido
+@can('Usuario')
+
+@endcan
 @endsection

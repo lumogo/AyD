@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-      <title>{{$title??"Chemistry"}}</title><!-- Meta Etiquetas  -->
+      <title>{{$title??"Cadmio"}}</title><!-- Meta Etiquetas  -->
       <meta name="author" content="Cesar Gerardo ,CesarGuzman@ieee.org">
       <meta name="copyright" content="Cesar Gerardo Guzman Lopez"><link rel="icon"  href="{{asset($icon ?? '') }}">        <meta name="robots" content="index, follow" />
       <meta charset="utf-8"><meta name="language" content="es"><meta name="generator" content="Eclipse"><meta http-equiv="X-UA-Compatible" content="IE=edge"><base target ="_self">
@@ -28,8 +28,10 @@
     <body>
    <div id="Container" > 
 	 @section('header')  
- 		asdfhaksjfhdkjahfkashdj
+ 		
   	 @section('content') 
+   	
+   	
    	@show 
    @section('footer')
    <footer class="  fixed-bottom navbar-light bg-faded">

@@ -30,7 +30,7 @@ class RolesController extends Controller
 
     /**
      * Show the form for creating new Role.
-     *
+     * 
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -51,17 +51,15 @@ class RolesController extends Controller
      */
     public function store(StoreRolesRequest $request)
     {
-        if (! Gate::allows('users_manage')) {
+        if (! Gate::allows('users_manage')) 
             return abort(401);
-        }
+        
         $role = Role::create($request->except('permission'));
         $permissions = $request->input('permission') ? $request->input('permission') : [];
         $role->givePermissionTo($permissions);
 
         return redirect()->route('admin.roles.index');
-    }
-
-
+    } 
     /**
      * Show the form for editing Role.
      *
@@ -109,7 +107,6 @@ class RolesController extends Controller
         return view('admin.roles.show', compact('role'));
     }
 
-
     /**
      * Remove Role from storage.
      *
@@ -121,12 +118,9 @@ class RolesController extends Controller
         if (! Gate::allows('users_manage')) {
             return abort(401);
         }
-
         $role->delete();
-
         return redirect()->route('admin.roles.index');
     }
-
     /**
      * Delete all selected Role at once.
      *
@@ -138,5 +132,4 @@ class RolesController extends Controller
 
         return response()->noContent();
     }
-
 }
