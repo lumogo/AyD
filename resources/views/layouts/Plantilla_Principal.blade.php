@@ -28,7 +28,8 @@
     <body>
    <div id="Container" > 
 	 @section('header')  
- 		
+ 		<div id="Menu"></div>
+ 	@show
   	 @section('content') 
    	
    	

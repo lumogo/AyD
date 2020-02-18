@@ -8,9 +8,7 @@
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 global.$ = global.jQuery = require('jquery');
-
 import 'jquery-ui/ui/widgets/datepicker.js';
-
 require('./bootstrap');
 import BootstrapVue from 'bootstrap-vue'
 //import * as uiv from 'uiv'
@@ -23,8 +21,19 @@ Vue.use(BootstrapVue);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-Vue.component('example', require('./components/Example.vue'));
-
-const app = new Vue({
-    el: '#app'
+ 
+ 
+var menu = new Vue({
+    el: '#Menu'
 });
+ 
+var app ;
+
+Vue.component('Ani1', require('./components/Animacion/ani1.vue').default);
+
+
+if($("#AUX").length!=0)  
+app = new Vue({
+    el: '#AUX'
+});
+ 
