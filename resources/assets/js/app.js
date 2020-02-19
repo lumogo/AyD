@@ -6,7 +6,9 @@
  */
 
 import $ from 'jquery';
+import FreeTransform from 'vue-free-transform';
 window.$ = window.jQuery = $;
+
 global.$ = global.jQuery = require('jquery');
 import 'jquery-ui/ui/widgets/datepicker.js';
 require('./bootstrap');
@@ -14,7 +16,7 @@ import BootstrapVue from 'bootstrap-vue'
 //import * as uiv from 'uiv'
 window.Vue = require('vue');
 Vue.use(BootstrapVue);
-
+Vue.use(FreeTransform);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

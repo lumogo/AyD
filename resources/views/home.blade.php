@@ -4,7 +4,7 @@
 <div class="content">
     <div class="row">
         <div class="col-lg-12">
-            Home
+            <h1><a href="{{url('/')}}">animaciones</a></h1>
         </div>
     </div>
 </div>

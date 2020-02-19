@@ -3,8 +3,9 @@
 @can('Usuario')
 <div  class="row justify-content-center">
 	<div class="col-8 p-2 mt-4 ">
-		<div id="AUX">
-			
+
+
+		<div id="AUX" >
 	 		<Ani1></Ani1>
 		</div>
 	</div>	
